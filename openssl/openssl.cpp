@@ -8,6 +8,12 @@
 #include"utils/file_utils.h"
 using namespace std;
 
+int test()
+{
+	int x=15;
+	int y = 99;
+	return x + y;
+}
 int main()
 {
 	X509* cert = NULL;
@@ -20,7 +26,7 @@ int main()
 	size_t readByts = 0;
 	std::string ret;
 
-	std::string content = "hello,worldssssssssssssssssssss999999999999999"; 
+	std::string content = "byebye"; 
 	cert = readCert("/home/xingxing/opensslKeyAndCeritificate/ecdsa_cert.pem");
 	if (cert == NULL)return -1;
 	privateKey = readPrivateKey("/home/xingxing/opensslKeyAndCeritificate/private.key"); if (privateKey == NULL)return -1;

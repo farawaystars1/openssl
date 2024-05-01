@@ -1,12 +1,13 @@
-#include "file_utils.h"
+﻿#include "file_utils.h"
 
 X509* readCert(const char* path)
 {
 	X509* cert = NULL;
 	BIO* in = NULL;
 
-	in = BIO_new_file(path, "rb");
+	in = BIO_new_file(path,"rb");
 	cert = PEM_read_bio_X509(in, NULL, NULL, NULL);
+	//test
 	return cert;
 }
 
