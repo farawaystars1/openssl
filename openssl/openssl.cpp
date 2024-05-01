@@ -10,9 +10,8 @@ using namespace std;
 
 int test()
 {
-	int x=15;
-	int y = 99;
-	return x + y;
+	std::cout << "test" << std::endl;
+	return 0;
 }
 int main()
 {
