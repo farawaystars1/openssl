@@ -7,8 +7,12 @@ set(EXECUTABLE_OUTPUT_PATH "/home/xingxing/bin")
 include_directories(openssl  "/home/xingxing/OPENSSL/include")
 find_library(openssl_lib   "crypto" "ssl" HINTS "/home/xingxing/OPENSSL/lib")
 
-add_executable (openssl "openssl.cpp" "openssl.h")
+#aux_source_directory("utils" UTILS_SOURCES)
 
+add_executable (openssl "openssl.cpp" 
+"openssl.h" 
+#utils文件夹
+"utils/file_utils.cpp" "utils/file_utils.h")
 target_link_libraries(openssl ${openssl_lib})
 
 #target_link_directories(openssl  public "/home/xingxing/OPENSSL/lib")
