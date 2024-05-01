@@ -10,7 +10,7 @@ using namespace std;
 
 int test()
 {
-	std::cout << "test" << std::endl;
+	std::cout << "good" << std::endl;
 	return 0;
 }
 int main()
